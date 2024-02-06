@@ -8,7 +8,7 @@ var pkg         = require('./package.json');
 var probeStream = require('./stream');
 var URL         = require('url').URL;
 
-var defaultAgent = pkg.name + '/' + pkg.version + '(+https://github.com/nodeca/probe-image-size)';
+var defaultAgent = process.env.CMS_USER_AGENT;
 
 var defaults = {
   open_timeout: 10000,
