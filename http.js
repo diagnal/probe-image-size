@@ -8,7 +8,7 @@ var pkg         = require('./package.json');
 var probeStream = require('./stream');
 var URL         = require('url').URL;
 
-var defaultAgent = process.env.CMS_USER_AGENT;
+var defaultAgent = process.env.CMS_USER_AGENT || 'OS-CMS-ML/00000/0.0.1*';
 
 var defaults = {
   open_timeout: 10000,
